@@ -116,7 +116,7 @@
           throw new Error("ID do produto não encontrado na URL.");
         }
 
-        const response = await fetch(`http://localhost:8080/API-Loja/api.php/produtos/${productId}`);
+        const response = await fetch(`http://localhost:8000/api.php/produtos/${productId}`);
         
         if (!response.ok) {
           throw new Error(`Erro ao carregar o produto. Status: ${response.status}`);

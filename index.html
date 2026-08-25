@@ -112,7 +112,7 @@
   <script>
     async function loadProducts() {
       try {
-        const response = await fetch('http://localhost:8080/API-Loja/api.php/produtos/');
+        const response = await fetch('http://localhost:8000/api.php/produtos/');
         if (!response.ok) {
           throw new Error("Erro ao carregar produtos. Status: " + response.status);
         }
